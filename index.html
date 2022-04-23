@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Now taking commissions.</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>Burke's Photography Studio</h1>
+  <p>With a <b>flexible</b> layout.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#gallery">Gallery</a>
+  <a href="#about" >About</a>
+  <a href="#blog" >Blog</a>
+  <a href="#contact" >Contact Us</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2 id="about">About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg">
+      <img class="enlarge-onhover" src="selfie-1.jpg" alt="cowboy"style="height:170px;" style="width:40%">
+    </div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3 id="gallery">Gallery</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg">
+      <img class="enlarge-onhover" src="cottage.jpg" alt="cottage-door"style="height:200px;" style="width:40%">
+    </div>
+    <br>
+    <div class="fakeimg" >
+      <img class="enlarge-onhover" src="night.jpg" alt="night-sky"style="height:200px;" style="width:40%">
+    </div>
+    <br>
+    <div class="fakeimg" >
+      <img class="enlarge-onhover" src="dog.jpg" alt="dog-in-snow"style="height:200px;" style="width:40%">
+    </div>
+    <br>
+    <div class="fakeimg" >
+      <img class="enlarge-onhover" src="rooster.jpg" alt="rooster"style="height:200px;" style="width:40%">
+    </div>
+    <br>
+    <div class="fakeimg" >
+      <img src="lake.jpg" alt="mountain-lake" style="height:200px;" style="width:40%" onclick="enlargeImg()"
+      id="img1">
+      <br>
+      <button onclick="resetImg()">Reset</button>
+    </div>
+    <br>
+    <div class="fakeimg">
+      <img class="enlarge-onhover" src="tree.jpg" alt="tree"style="height:200px;" style="width:40%">
+    </div>
+  </div>
+  <div class="main">
+    <h2 id="blog">Blog</h2>
+    <h5>Entry 1, Apr 19, 2022</h5>
+    <div class="fakeimg" style="height:200px;" img src="cottage.jpg" alt="cottage" style="width:300px">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Entry 2, Apr 23, 2022</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <form name="form_user" id="form" action=" " method="post" >
+      <h1>Contact Us</h1>
+      <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" class= "userInput" id="userName" name=name placeholder="Enter your full name" />
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" class= "userInput" id="userEmail" name=email placeholder="Enter your email address" />
+        <br>
+        <label for="number">Number:</label>
+        <input type="text" class= "userInput" id="userNumber" name=number placeholder="Enter your email number" />
+        <br>
+        <label for="dob">Date Of Birth:</label>
+        <input type="text" class= "userInput" id="userDob" name=dob placeholder="Enter your date of birth" />
+        <br>
+        <button input type = "submit" onclick = "go()">Get in Touch</button>
+      </div>
+     <div class="footer">
+    </form>  
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
